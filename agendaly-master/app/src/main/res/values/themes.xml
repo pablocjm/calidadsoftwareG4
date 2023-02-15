@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.Agendaly" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand -->
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+    <style name="Theme.Agendaly.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Agendaly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Agendaly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Agendaly.Dialog" parent="Theme.Agendaly" />
+    <style name="Theme.Agendaly.AlertDialog" parent="Theme.Agendaly" />
+    <style name="Theme.Agendaly.DatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth" />
+    <style name="Theme.Agendaly.CheckBox" />
+</resources>
