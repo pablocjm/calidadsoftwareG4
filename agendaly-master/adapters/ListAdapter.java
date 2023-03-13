@@ -98,7 +98,8 @@ public class ListAdapter extends RecyclerView
             String dateText = new SimpleDateFormat("dd/MM/yy", Locale.US)
                     .format(date);
             this.date.setText(dateText);
-            this.itemView.setOnClickListener(view -> listener.onItemClick(task));
+            this.itemView.setOnClickListener(view ->
+                                        listener.onItemClick(task));
             this.check.setOnCheckedChangeListener((compoundButton, b) -> {
                 boolean alternateCheck = !task.isCheck();
                 CRUDTask.updateTaskCheck(task, alternateCheck);
