@@ -41,7 +41,8 @@ public class MainActivity extends AppCompatActivity {
         if (CRUDSetting.isEmpty()) {
             CRUDSetting.createSetting("en", false);
         }
-        SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences pref = PreferenceManager.
+                                                  getDefaultSharedPreferences(this);
         Setting setting = CRUDSetting.getSetting();
         String language = setting.getLanguage();
         this.setLocale(language);
@@ -75,9 +76,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void setColorMode(boolean darkMode) {
         if (darkMode) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.
+                                                          MODE_NIGHT_YES);
         } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.
+                                                          MODE_NIGHT_NO);
         }
     }
 
