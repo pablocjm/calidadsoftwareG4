@@ -1,46 +1,190 @@
-# Java Gradle CircleCI 2.0 configuration file
-# See: https://circleci.com/docs/2.0/language-java/
-version: 2
+# This code is licensed from CircleCI to the user under the MIT license.
+# See here for details: https://circleci.com/developer/orbs/licensing
+version: 2.1
+description: Execute your CI pipelines on Windows in the cloud with Nvidia GPU support.
+display:
+    home_url: https://circleci.com/build-environments/windows
+    source_url: https://github.com/CircleCI-Public/windows-orb
+executors:
+    default:
+        description: |
+            An executor preloaded with Visual Studio 2022 plus a number of other development tools.
+        machine:
+            image: windows-server-2022-<< parameters.variant >>:<< parameters.version >>
+            resource_class: windows.<< parameters.size >>
+            shell: << parameters.shell >>
+        parameters:
+            shell:
+                default: powershell.exe -ExecutionPolicy Bypass
+                description: The shell to use. Defaults to `powershell.exe -ExecutionPolicy Bypass`
+                type: string
+            size:
+                default: medium
+                description: The size of Windows resource to use. Defaults to medium.
+                enum:
+                    - medium
+                    - large
+                    - xlarge
+                    - 2xlarge
+                type: enum
+            variant:
+                default: gui
+                description: The variant of windows server 2022. Defaults to gui.
+                enum:
+                    - gui
+                type: enum
+            version:
+                default: current
+                description: The image version to use when executing. Defaults to "current".
+                type: string
+    server-2019:
+        description: |
+            An executor preloaded with Visual Studio 2019 plus a number of other development tools.
+        machine:
+            image: windows-server-2019-<< parameters.variant >>:<< parameters.version >>
+            resource_class: windows.<< parameters.size >>
+            shell: << parameters.shell >>
+        parameters:
+            shell:
+                default: powershell.exe -ExecutionPolicy Bypass
+                description: The shell to use. Defaults to `powershell.exe -ExecutionPolicy Bypass`
+                type: string
+            size:
+                default: medium
+                description: The size of Windows resource to use. Defaults to medium.
+                enum:
+                    - medium
+                    - large
+                    - xlarge
+                    - 2xlarge
+                type: enum
+            variant:
+                default: vs2019
+                description: The variant of Windows Server 2019. Defaults to vs2019.
+                enum:
+                    - vs2019
+                type: enum
+            version:
+                default: current
+                description: The image version to use when executing. Defaults to "current".
+                type: string
+    server-2019-cuda:
+        description: |
+            An executor with an Nvidia GPU which includes a pre-installed CUDA runtime and the cuDNN library.
+        machine:
+            image: windows-server-2019-cuda:<< parameters.version >>
+            resource_class: windows.gpu.nvidia.<< parameters.size >>
+            shell: << parameters.shell >>
+        parameters:
+            shell:
+                default: powershell.exe -ExecutionPolicy Bypass
+                description: The shell to use. Defaults to `powershell.exe -ExecutionPolicy Bypass`
+                type: string
+            size:
+                default: medium
+                description: The size of Windows GPU resource to use. Defaults to medium.
+                enum:
+                    - medium
+                type: enum
+            version:
+                default: current
+                description: The image version to use when executing. Defaults to "current".
+                type: string
+    server-2022:
+        description: |
+            An executor preloaded with Visual Studio 2022 plus a number of other development tools.
+        machine:
+            image: windows-server-2022-<< parameters.variant >>:<< parameters.version >>
+            resource_class: windows.<< parameters.size >>
+            shell: << parameters.shell >>
+        parameters:
+            shell:
+                default: powershell.exe -ExecutionPolicy Bypass
+                description: The shell to use. Defaults to `powershell.exe -ExecutionPolicy Bypass`
+                type: string
+            size:
+                default: medium
+                description: The size of Windows resource to use. Defaults to medium.
+                enum:
+                    - medium
+                    - large
+                    - xlarge
+                    - 2xlarge
+                type: enum
+            variant:
+                default: gui
+                description: The variant of Windows Server 2022. Defaults to gui.
+                enum:
+                    - gui
+                type: enum
+            version:
+                default: current
+                description: The image version to use when executing. Defaults to "current".
+                type: string
+examples:
+    run_default:
+        description: This is an example of running a simple job on the default Windows executor
+        usage:
+            version: "2.1"
+            orbs:
+                win: circleci/windows@5.0
+            jobs:
+                build:
+                    executor:
+                        name: win/default
+                    steps:
+                        - checkout
+                        - run: Write-Host 'Hello, Windows'
+            workflows:
+                my-workflow:
+                    jobs:
+                        - build
+    run_windows_2019:
+        description: |
+            This is an example of running a simple job on the Windows Server 2019 executor
+        usage:
+            version: "2.1"
+            orbs:
+                win: circleci/windows@5.0
+            jobs:
+                build:
+                    executor: win/server-2019
+                    steps:
+                        - run: Write-Host 'Hello, Windows'
+            workflows:
+                my-workflow:
+                    jobs:
+                        - build
+    run_windows_2019_cuda:
+        description: |
+            This is an example of running a simple job on the Windows Server 2019 cuda (GPU) executor
+        usage:
+            version: "2.1"
+            orbs:
+                win: circleci/windows@5.0
+            jobs:
+                build:
+                    executor: win/server-2019-cuda
+                    steps:
+                        - run: Write-Host 'Hello, Windows'
+            workflows:
+                my-workflow:
+                    jobs:
+                        - build
+    run_windows_2022:
+        description: |
+            This is an example of running a simple job on the Windows Server 2022 executor
+        usage:
+            version: "2.1"
+            orbs:
+                win: circleci/windows@5.0
+            jobs:
+                build:
+                    executor: win/server-2022
+                    steps:
+                        - run: Write-Host 'Hello, Windows'
+            workflows:
+                my-workflow:
+                    jobs:
+                        - build
 
-# Define a job to be invoked later in a workflow.
-# See: https://circleci.com/docs/2.0/configuration-reference/#jobs
-jobs:
-  build:
-    # Specify the execution environment. You can specify an image from Dockerhub or use one of our Convenience Images from CircleCI's Developer Hub.
-    # See: https://circleci.com/docs/2.0/configuration-reference/#docker-machine-macos-windows-executor
-    docker:
-      # specify the version you desire here
-      - image: circleci/openjdk:8-jdk
-
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/postgres:9.4
-
-    working_directory: ~/repo
-
-    environment:
-      # Customize the JVM maximum heap limit
-      JVM_OPTS: -Xmx3200m
-      TERM: dumb
-    # Add steps to the job
-    # See: https://circleci.com/docs/2.0/configuration-reference/#steps
-    steps:
-      - checkout
-
-      # Download and cache dependencies
-      - restore_cache:
-          keys:
-            - v1-dependencies-{{ checksum "build.gradle" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-
-
-      - run: gradle dependencies
-
-      - save_cache:
-          paths:
-            - ~/.gradle
-          key: v1-dependencies-{{ checksum "build.gradle" }}
-
-      # run tests!
-      - run: gradle test
