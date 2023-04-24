@@ -1,8 +1,12 @@
 package com.devfiveurjc.agendaly;
 
+import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static org.junit.Assert.assertEquals;
+
+import androidx.test.espresso.Espresso;
+
 import org.junit.Test;
 
-import static org.junit.Assert.*;
 
 /**
  * Example local unit test, which will execute on the development machine (host).
@@ -14,4 +18,12 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+
+    @Test
+    public void testNavigation() {
+        Espresso.onView(withId(R.id.TaskListFragment));
+    }
+
 }
+

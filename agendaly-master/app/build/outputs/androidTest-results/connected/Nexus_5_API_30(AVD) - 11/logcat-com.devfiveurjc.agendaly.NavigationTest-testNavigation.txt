@@ -1,0 +1,225 @@
+04-24 15:26:42.393 19799 19821 I TestRunner: started: testNavigation(com.devfiveurjc.agendaly.NavigationTest)
+04-24 15:26:42.401 19799 19821 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+04-24 15:26:42.419   518   555 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+04-24 15:26:42.432   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 35, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+04-24 15:26:42.435   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=35)
+04-24 15:26:42.456   518   555 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+04-24 15:26:42.485   302   302 D Zygote  : Forked child process 19828
+04-24 15:26:42.502   321   369 D goldfish-address-space: claimShared: Ask to claim region [0x3f4fd2000 0x3f57bb000]
+04-24 15:26:42.523   418   418 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+04-24 15:26:42.525 19828 19828 I c.agendaly.tes: Late-enabling -Xcheck:jni
+04-24 15:26:42.625 19828 19828 I c.agendaly.tes: Unquickening 12 vdex files!
+04-24 15:26:42.627 19828 19828 W c.agendaly.tes: Unexpected CPU variant for X86 using defaults: x86
+04-24 15:26:42.652  2190  2215 I adbd    : jdwp connection from 19828
+04-24 15:26:42.667   518  1304 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.668   518  1304 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.672   518  1304 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.702 19828 19828 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-24 15:26:42.703 19828 19828 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-24 15:26:42.706 19828 19828 I c.agendaly.tes: The ClassLoaderContext is a special shared library.
+04-24 15:26:42.707 19828 19828 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-24 15:26:42.707 19828 19828 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+04-24 15:26:42.709 19828 19828 I c.agendaly.tes: The ClassLoaderContext is a special shared library.
+04-24 15:26:42.771 19828 19828 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-24 15:26:42.771 19828 19828 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+04-24 15:26:42.805 19828 19853 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+04-24 15:26:42.806 19828 19853 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+04-24 15:26:42.809 19828 19853 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+04-24 15:26:42.916   321   369 D goldfish-address-space: claimShared: Ask to claim region [0x3faae8000 0x3fb2d1000]
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.921   518  1304 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.922   518  1304 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.926   518  1304 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_6 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_3 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_10 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_4 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_11 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_5 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.927   518  1304 W InputReader: Device virtio_input_multi_touch_2 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.928   518  1304 W InputReader: Device virtio_input_multi_touch_9 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.928   518  1304 W InputReader: Device virtio_input_multi_touch_7 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.928   518  1304 W InputReader: Device virtio_input_multi_touch_8 is associated with display ADISPLAY_ID_NONE.
+04-24 15:26:42.993 19799 19857 D libEGL  : loaded /vendor/lib/egl/libEGL_emulation.so
+04-24 15:26:42.996 19799 19857 D libEGL  : loaded /vendor/lib/egl/libGLESv1_CM_emulation.so
+04-24 15:26:42.999 19799 19857 D libEGL  : loaded /vendor/lib/egl/libGLESv2_emulation.so
+04-24 15:26:43.030 19799 19799 D LifecycleMonitor: Lifecycle status change: com.devfiveurjc.agendaly.activities.MainActivity@1c44646 in: PRE_ON_CREATE
+04-24 15:26:43.031 19799 19799 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+04-24 15:26:43.661 19799 19799 W veurjc.agendal: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+04-24 15:26:43.662 19799 19799 W veurjc.agendal: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+04-24 15:26:43.707 19799 19799 D LifecycleMonitor: Lifecycle status change: com.devfiveurjc.agendaly.activities.MainActivity@1c44646 in: CREATED
+04-24 15:26:43.707 19799 19799 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.devfiveurjc.agendaly.activities.MainActivity@1c44646
+04-24 15:26:43.721 19799 19799 D LifecycleMonitor: Lifecycle status change: com.devfiveurjc.agendaly.activities.MainActivity@1c44646 in: STARTED
+04-24 15:26:43.721 19799 19799 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.devfiveurjc.agendaly.activities.MainActivity@1c44646
+04-24 15:26:43.726 19799 19799 D LifecycleMonitor: Lifecycle status change: com.devfiveurjc.agendaly.activities.MainActivity@1c44646 in: RESUMED
+04-24 15:26:43.726 19799 19799 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.devfiveurjc.agendaly.activities.MainActivity@1c44646
+04-24 15:26:43.763 19799 19821 D InputManagerEventInjectionStrategy: Creating injection strategy with input manager.
+04-24 15:26:43.763 19799 19821 W veurjc.agendal: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+04-24 15:26:43.765 19799 19821 W veurjc.agendal: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+04-24 15:26:43.766 19799 19821 W veurjc.agendal: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+04-24 15:26:43.798 19799 19855 D HostConnection: HostConnection::get() New Host Connection established 0xf73a1790, tid 19855
+04-24 15:26:43.827 19799 19855 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+04-24 15:26:43.828   184   184 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+04-24 15:26:43.829 19799 19855 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+04-24 15:26:43.842 19799 19855 D EGL_emulation: eglCreateContext: 0xf73a2360: maj 2 min 0 rcv 2
+04-24 15:26:43.844 19799 19855 D EGL_emulation: eglMakeCurrent: 0xf73a2360: ver 2 0 (tinfo 0xf76f9e30) (first time)
+04-24 15:26:43.875   321   369 D goldfish-address-space: claimShared: Ask to claim region [0x3f5ccb000 0x3f64b4000]
+04-24 15:26:43.877   184   184 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+04-24 15:26:43.877 19799 19855 I Gralloc4: mapper 4.x is not supported
+04-24 15:26:43.878 19799 19855 D HostConnection: createUnique: call
+04-24 15:26:43.878 19799 19855 D HostConnection: HostConnection::get() New Host Connection established 0xf73b16a0, tid 19855
+04-24 15:26:43.878 19799 19855 D goldfish-address-space: allocate: Ask for block of size 0x100
+04-24 15:26:43.878 19799 19855 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3f3ffe000 size 0x2000
+04-24 15:26:43.895 19799 19855 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_null_optional_strings ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_YUV_Cache ANDROID_EMU_vulkan_ignored_handles ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_read_color_buffer_dma GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_2
+04-24 15:26:43.897   321   369 D goldfish-address-space: claimShared: Ask to claim region [0x3f64b4000 0x3f6c9d000]
+04-24 15:26:43.898   321   369 D goldfish-address-space: claimShared: Ask to claim region [0x3f4000000 0x3f47e9000]
+04-24 15:26:44.014   518   555 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+04-24 15:26:44.015   518   560 D ArtManagerInternalImpl: /data/misc/iorapd/com.devfiveurjc.agendaly/1/com.devfiveurjc.agendaly.activities.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+04-24 15:26:44.016   518   560 I ActivityTaskManager: Displayed com.devfiveurjc.agendaly/.activities.MainActivity: +1s603ms
+04-24 15:26:44.072 19799 19821 W veurjc.agendal: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+04-24 15:26:44.088 19799 19799 W veurjc.agendal: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+04-24 15:26:44.088 19799 19799 W veurjc.agendal: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+04-24 15:26:44.088 19799 19799 W veurjc.agendal: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+04-24 15:26:44.094 19799 19799 W veurjc.agendal: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+04-24 15:26:44.094 19799 19799 W veurjc.agendal: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+04-24 15:26:44.095 19799 19799 W veurjc.agendal: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+04-24 15:26:44.101 19799 19799 I ViewInteraction: Performing 'single click' action on view with id: com.devfiveurjc.agendaly:id/addFloatingButton
+04-24 15:26:44.214   518  1638 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+04-24 15:26:44.214   518  1638 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+04-24 15:26:44.223  8013 19867 I PBSessionCacheImpl: (REDACTED) Deleted sessionId[%d] from persistence.
+04-24 15:26:44.247   381   462 D AudioFlinger: mixer(0xf2bfc030) throttle end: throttle time(7)
+04-24 15:26:44.264  8013  8142 I A       : getLocaleToModelSpecsMap
+04-24 15:26:44.265  8013  8142 I A       : getLocaleToModelSpecsMap
+04-24 15:26:44.266  8013  8142 W SearchServiceCore: Abort, client detached.
+04-24 15:26:44.275  8013  8142 I MicroDetectionState: (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+04-24 15:26:44.275  8013  8142 I MicroDetectionState: (REDACTED) Should stop hotword detection immediately - %b
+04-24 15:26:44.275  8013  8142 I A       : getLocaleToModelSpecsMap
+04-24 15:26:44.275  8013  8142 I A       : getLocaleToModelSpecsMap
+04-24 15:26:44.474 19799 19799 W veurjc.agendal: Verification of androidx.loader.content.Loader androidx.loader.app.LoaderManagerImpl.restartLoader(int, android.os.Bundle, androidx.loader.app.LoaderManager$LoaderCallbacks) took 160.649ms (566.45 bytecodes/s) (1984B approximate peak alloc)
+04-24 15:26:44.480   518  1638 I system_server: oneway function results will be dropped but finished with status OK and parcel size 4
+04-24 15:26:44.534  7755  7805 I FontLog : Received query Noto Color Emoji Compat, URI content://com.google.android.gms.fonts [CONTEXT service_id=132 ]
+04-24 15:26:44.535  7755  7805 I FontLog : Query [emojicompat-emoji-font] resolved to {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} [CONTEXT service_id=132 ]
+04-24 15:26:44.542  7755  7805 I FontLog : Fetch {Noto Color Emoji Compat, wdth 100.0, wght 400, ital 0.0, bestEffort false} end status Status{statusCode=SUCCESS, resolution=null} [CONTEXT service_id=132 ]
+04-24 15:26:44.546  7755  7805 I FontLog : Pulling font file for id = 24, cache size = 4 [CONTEXT service_id=132 ]
+04-24 15:26:44.549  7755  7805 I FontLog : Pulling font file for id = 24, cache size = 4 [CONTEXT service_id=132 ]
+04-24 15:26:44.788 19799 19799 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=is displayed on the screen to the user}' assertion on view with id: com.devfiveurjc.agendaly:id/TaskAddFragment
+04-24 15:26:44.789 19799 19799 E ViewAssertions: 'is displayed on the screen to the user' check could not be performed because view 'with id: com.devfiveurjc.agendaly:id/TaskAddFragment' was not found.
+04-24 15:26:44.792 19799 19821 E TestRunner: failed: testNavigation(com.devfiveurjc.agendaly.NavigationTest)
+04-24 15:26:44.792 19799 19821 E TestRunner: ----- begin exception -----
+04-24 15:26:44.795 19799 19821 E TestRunner: androidx.test.espresso.NoMatchingViewException: No views in hierarchy found matching: with id: com.devfiveurjc.agendaly:id/TaskAddFragment
+04-24 15:26:44.795 19799 19821 E TestRunner:
+04-24 15:26:44.795 19799 19821 E TestRunner: View Hierarchy:
+04-24 15:26:44.795 19799 19821 E TestRunner: +>DecorView{id=-1, visibility=VISIBLE, width=1080, height=1920, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params={(0,0)(fillxfill) ty=BASE_APPLICATION wanim=0x10302fe
+04-24 15:26:44.795 19799 19821 E TestRunner:   fl=LAYOUT_IN_SCREEN LAYOUT_INSET_DECOR SPLIT_TOUCH HARDWARE_ACCELERATED DRAWS_SYSTEM_BAR_BACKGROUNDS
+04-24 15:26:44.795 19799 19821 E TestRunner:   pfl=FORCE_DRAW_STATUS_BAR_BACKGROUND FIT_INSETS_CONTROLLED
+04-24 15:26:44.795 19799 19821 E TestRunner:   fitSides=}, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +->LinearLayout{id=-1, visibility=VISIBLE, width=1080, height=1776, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@d35b5f7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-->ViewStub{id=16908719, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@159ec64, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-->FrameLayout{id=-1, visibility=VISIBLE, width=1080, height=1776, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@93a3382, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--->FitWindowsLinearLayout{id=2131296322, res-name=action_bar_root, visibility=VISIBLE, width=1080, height=1776, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@1780ac9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +---->ViewStubCompat{id=2131296333, res-name=action_mode_bar_stub, visibility=GONE, width=0, height=0, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=true, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@3dc05ce, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +---->ContentFrameLayout{id=16908290, res-name=content, visibility=VISIBLE, width=1080, height=1776, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.LinearLayout$LayoutParams@cf463fc, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +----->CoordinatorLayout{id=-1, visibility=VISIBLE, width=1080, height=1776, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@b6d8a85, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=2}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +------>AppBarLayout{id=-1, visibility=VISIBLE, width=1080, height=168, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams@b47e90b, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=72.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +------->Toolbar{id=2131296769, res-name=toolbar, visibility=VISIBLE, width=1080, height=168, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=com.google.android.material.appbar.AppBarLayout$LayoutParams@30a0ae7, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=3}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-------->AppCompatTextView{id=-1, visibility=VISIBLE, width=255, height=81, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.Toolbar$LayoutParams@433694, tag=null, root-is-layout-requested=false, has-input-connection=false, x=216.0, y=43.0, text=Add Task, input-type=0, ime-target=false, has-links=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-------->ActionMenuView{id=-1, visibility=VISIBLE, width=120, height=168, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.Toolbar$LayoutParams@fea8132, tag=null, root-is-layout-requested=false, has-input-connection=false, x=960.0, y=0.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->OverflowMenuButton{id=-1, desc=More options, visibility=VISIBLE, width=120, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.ActionMenuView$LayoutParams@8e26e83, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=12.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-------->AppCompatImageButton{id=-1, desc=Navigate up, visibility=VISIBLE, width=168, height=168, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.appcompat.widget.Toolbar$LayoutParams@2672800, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +------>ConstraintLayout{id=-1, visibility=VISIBLE, width=1080, height=1536, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.coordinatorlayout.widget.CoordinatorLayout$LayoutParams@e3b7e7e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=240.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +------->FragmentContainerView{id=2131296583, res-name=nav_host_fragment_content_main, visibility=VISIBLE, width=1080, height=1536, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@c16c42c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=1}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +-------->ConstraintLayout{id=2131296718, res-name=taskAddConstraintLayout, visibility=VISIBLE, width=1080, height=1536, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@eeb6cc4, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0, child-count=7}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->TextInputEditText{id=2131296723, res-name=taskAddEditTitle, visibility=VISIBLE, width=850, height=160, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@30bfe73, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x40061 imeOptions=0x8000005 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Write a title label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=5, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], x=114.0, y=147.0, text=, hint=Write a title, input-type=262241, ime-target=false, has-links=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->TextInputEditText{id=2131296721, res-name=taskAddEditDescription, visibility=VISIBLE, width=630, height=136, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@3949130, tag=null, root-is-layout-requested=false, has-input-connection=true, editor-info=[inputType=0x40061 imeOptions=0x4000006 privateImeOptions=null actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=Write a description label=null packageName=null autofillId=null fieldId=0 fieldName=null extras=Bundle[{android.support.text.emoji.emojiCompat_metadataVersion=5, android.support.text.emoji.emojiCompat_replaceAll=false}] hintLocales=null contentMimeTypes=null ], x=224.0, y=287.0, text=, hint=Write a description, input-type=262241, ime-target=false, has-links=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->MaterialTextView{id=2131296719, res-name=taskAddDate, visibility=VISIBLE, width=450, height=165, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@59ea1a9, tag=null, root-is-layout-requested=false, has-input-connection=false, x=468.0, y=780.0, text=24/04/2023, input-type=0, ime-target=false, has-links=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->MaterialTextView{id=2131296725, res-name=taskAddTime, visibility=VISIBLE, width=450, height=165, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@b82832e, tag=null, root-is-layout-requested=false, has-input-connection=false, x=468.0, y=988.0, text=15:26, input-type=0, ime-target=false, has-links=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->FloatingActionButton{id=2131296720, res-name=taskAddEditDateButton, desc=Date, visibility=VISIBLE, width=165, height=165, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e1e0ecf, tag=null, root-is-layout-requested=false, has-input-connection=false, x=169.0, y=780.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->FloatingActionButton{id=2131296722, res-name=taskAddEditTimeButton, desc=Time, visibility=VISIBLE, width=165, height=165, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@e69905c, tag=null, root-is-layout-requested=false, has-input-connection=false, x=169.0, y=988.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +--------->MaterialButton{id=2131296724, res-name=taskAddSaveButton, visibility=VISIBLE, width=321, height=168, has-focus=false, has-focusable=true, has-window-focus=true, is-clickable=true, is-enabled=true, is-focused=false, is-focusable=true, is-layout-requested=false, is-selected=false, layout-params=androidx.constraintlayout.widget.ConstraintLayout$LayoutParams@16af65, tag=null, root-is-layout-requested=false, has-input-connection=false, x=378.0, y=1297.0, text=Save, input-type=0, ime-target=false, has-links=false, is-checked=false}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +->View{id=16908336, res-name=navigationBarBackground, visibility=VISIBLE, width=1080, height=144, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@37a43a, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=1776.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: +->View{id=16908335, res-name=statusBarBackground, visibility=VISIBLE, width=1080, height=72, has-focus=false, has-focusable=false, has-window-focus=true, is-clickable=false, is-enabled=true, is-focused=false, is-focusable=false, is-layout-requested=false, is-selected=false, layout-params=android.widget.FrameLayout$LayoutParams@a96c8eb, tag=null, root-is-layout-requested=false, has-input-connection=false, x=0.0, y=0.0}
+04-24 15:26:44.795 19799 19821 E TestRunner: |
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at dalvik.system.VMStack.getThreadStackTrace(Native Method)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at java.lang.Thread.getStackTrace(Thread.java:1736)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.espresso.base.DefaultFailureHandler.getUserFriendlyError(DefaultFailureHandler.java:88)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.espresso.base.DefaultFailureHandler.handle(DefaultFailureHandler.java:51)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.espresso.ViewInteraction.waitForAndHandleInteractionResults(ViewInteraction.java:312)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.espresso.ViewInteraction.check(ViewInteraction.java:297)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at com.devfiveurjc.agendaly.NavigationTest.testNavigation(NavigationTest.java:24)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at java.lang.reflect.Method.invoke(Native Method)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:128)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.Suite.runChild(Suite.java:27)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.internal.runner.TestExecutor.execute(TestExecutor.java:56)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at androidx.test.runner.AndroidJUnitRunner.onStart(AndroidJUnitRunner.java:388)
+04-24 15:26:44.795 19799 19821 E TestRunner: 	at android.app.Instrumentation$InstrumentationThread.run(Instrumentation.java:2205)
+04-24 15:26:44.795 19799 19821 E TestRunner: ----- end exception -----
+04-24 15:26:44.799 19799 19821 I TestRunner: finished: testNavigation(com.devfiveurjc.agendaly.NavigationTest)
