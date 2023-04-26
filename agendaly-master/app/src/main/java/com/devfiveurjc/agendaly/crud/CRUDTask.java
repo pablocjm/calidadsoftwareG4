@@ -44,6 +44,7 @@ public class CRUDTask {
     private static void setRealmTask(Task realmTask, Task task) {
         realmTask.setTitle(task.getTitle());
         realmTask.setDescription(task.getDescription());
+        realmTask.setImportance(task.getImportance());
         realmTask.setDate(task.getDate());
         realmTask.setCheck(task.isCheck());
     }
