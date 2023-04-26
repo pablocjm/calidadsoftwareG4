@@ -28,7 +28,7 @@ public class TaskAddFragment extends Fragment {
     private FragmentTaskAddBinding binding;
     private final int[] date = new int[3];
     private final int[] time = new int[2];
-    private EditText titleInputText, descriptionInputText;
+    private EditText titleInputText, descriptionInputText, importanceInputText;
     private TextView dateDisplay, timeDisplay;
 
     @Override
@@ -40,6 +40,7 @@ public class TaskAddFragment extends Fragment {
         this.dateDisplay = view.findViewById(R.id.taskAddDate);
         this.titleInputText = view.findViewById(R.id.taskAddEditTitle);
         this.descriptionInputText = view.findViewById(R.id.taskAddEditDescription);
+        this.importanceInputText = view.findViewById(R.id.taskAddEditImportance);
         //current date and time
         Calendar calendar = Calendar.getInstance();
         this.time[0] = calendar.get(Calendar.HOUR_OF_DAY);
@@ -56,6 +57,7 @@ public class TaskAddFragment extends Fragment {
     public void saveTask(View view) {
         this.titleInputText = view.findViewById(R.id.taskAddEditTitle);
         this.descriptionInputText = view.findViewById(R.id.taskAddEditDescription);
+        this.importanceInputText = view.findViewById(R.id.taskAddEditImportance);
         boolean isTitleInputEmpty = this.titleInputText.getText().toString().equals("");
         if (!isTitleInputEmpty) {
             Calendar dateTaskCalendar = Calendar.getInstance();
@@ -64,7 +66,8 @@ public class TaskAddFragment extends Fragment {
             // realm
             String titleText = this.titleInputText.getText().toString();
             String descriptionText = this.descriptionInputText.getText().toString();
-            Task task = new Task(titleText, descriptionText, dateTask);
+            String importanceText = this.importanceInputText.getText().toString();
+            Task task = new Task(titleText, descriptionText, importanceText, dateTask);
             CRUDTask.addTask(task);
             NavHostFragment.findNavController(this)
                     .navigate(R.id.action_TaskAddFragment_to_TaskListFragment);
