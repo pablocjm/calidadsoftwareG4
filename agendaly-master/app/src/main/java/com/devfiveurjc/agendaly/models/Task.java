@@ -14,14 +14,16 @@ public class Task extends RealmObject {
 
     private String title;
     private String description;
+    private String importance;
     private Date date;
     private boolean check = false;
 
     public Task() { }
 
-    public Task(String title, String description, Date date) {
+    public Task(String title, String description, String importance, Date date) {
         this.title = title;
         this.description = description;
+        this.importance = importance;
         this.date = date;
     }
 
@@ -36,6 +38,8 @@ public class Task extends RealmObject {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    public void setImportance(String importance){this.importance = importance;}
 
     public void setDate(Date date) {
         this.date = date;
@@ -56,6 +60,8 @@ public class Task extends RealmObject {
     public String getDescription() {
         return this.description;
     }
+
+    public String getImportance(){return this.importance;}
 
     public Date getDate() { return this.date;}
 
@@ -84,3 +90,4 @@ public class Task extends RealmObject {
     }
 
 }
+
