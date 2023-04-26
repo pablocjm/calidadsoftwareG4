@@ -8,6 +8,23 @@
     tools:context=".fragments.TaskAddFragment">
 
     <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/taskAddEditImportance"
+        android:layout_width="236dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:hint="@string/description_write"
+        android:inputType="textPersonName|textImeMultiLine"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.303"
+        tools:text="Importance" />
+
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/taskAddEditTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -26,19 +43,19 @@
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/taskAddEditDescription"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="236dp"
+        android:layout_height="55dp"
         android:ems="10"
-        android:textAlignment="center"
         android:hint="@string/description_write"
         android:inputType="textPersonName|textImeMultiLine"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintCircleRadius="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.205" />
+        app:layout_constraintVertical_bias="0.209" />
 
     <TextView
         android:id="@+id/taskAddDate"
