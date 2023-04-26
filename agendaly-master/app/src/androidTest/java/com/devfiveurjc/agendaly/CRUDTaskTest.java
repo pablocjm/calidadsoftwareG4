@@ -1,10 +1,10 @@
 package com.devfiveurjc.agendaly;
 
-import org.junit.Assert;
-import org.junit.Test;
-
 import com.devfiveurjc.agendaly.crud.CRUDTask;
 import com.devfiveurjc.agendaly.models.Task;
+
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.util.Date;
 import java.util.List;
@@ -16,7 +16,7 @@ public class CRUDTaskTest {
         //Borrar todas las Task
         CRUDTask.deleteAllTasks();
 
-        CRUDTask.addTask(new Task("hola", "que tal", new Date()));
+        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
         List<Task> tasks = CRUDTask.getAllTasks();
         Assert.assertEquals(1, tasks.size());
         Assert.assertEquals("hola", tasks.get(0).getTitle());
@@ -27,7 +27,7 @@ public class CRUDTaskTest {
         //Borrar todas las Task
         CRUDTask.deleteAllTasks();
 
-        CRUDTask.addTask(new Task("hola", "que tal", new Date()));
+        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
         List<Task> tasks = CRUDTask.getAllTasks();
         int id = tasks.get(0).getId();
 
@@ -41,13 +41,23 @@ public class CRUDTaskTest {
         //Borrar todas las Task
         CRUDTask.deleteAllTasks();
 
-        CRUDTask.addTask(new Task("hola", "que tal", new Date()));
+        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
         List<Task> tasks = CRUDTask.getAllTasks();
-        Task newTask = new Task("hey", "esto es nuevo", new Date());
+        Task newTask = new Task("hey", "esto es nuevo", "media", new Date());
         CRUDTask.updateTask(tasks.get(0), newTask);
 
         Assert.assertEquals("esto es nuevo", tasks.get(0).getDescription());
         Assert.assertEquals("hey", tasks.get(0).getTitle());
+        Assert.assertEquals("media", tasks.get(0).getImportance());
     }
 
+    @Test
+    public void testAddImportance (){
+        //Borrar todas las Task
+        CRUDTask.deleteAllTasks();
+
+        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
+        List<Task> tasks = CRUDTask.getAllTasks();
+        Assert.assertEquals("media", tasks.get(0).getImportance());
+    }
 }
