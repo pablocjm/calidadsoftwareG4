@@ -20,6 +20,9 @@ public class CRUDTaskTest {
         List<Task> tasks = CRUDTask.getAllTasks();
         Assert.assertEquals(1, tasks.size());
         Assert.assertEquals("hola", tasks.get(0).getTitle());
+        Assert.assertEquals("que tal", tasks.get(0).getDescription());
+        Assert.assertEquals("media", tasks.get(0).getImportance());
+        Assert.assertEquals(date, tasks.get(0).getDate());
     }
     
     @Test
@@ -41,7 +44,7 @@ public class CRUDTaskTest {
         //Borrar todas las Task
         CRUDTask.deleteAllTasks();
 
-        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
+        CRUDTask.addTask(new Task("hola", "que tal", "alta", new Date()));
         List<Task> tasks = CRUDTask.getAllTasks();
         Task newTask = new Task("hey", "esto es nuevo", "media", new Date());
         CRUDTask.updateTask(tasks.get(0), newTask);
