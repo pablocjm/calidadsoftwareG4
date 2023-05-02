@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
         pref.edit().putBoolean("dark_mode", darkMode).apply();
         // initial default tasks
         if (CRUDTask.isEmpty()) {
-            CRUDTask.addTask(new Task("uwu", "uwu", new Date()));
-            CRUDTask.addTask(new Task("owo", "owo", new Date()));
+            CRUDTask.addTask(new Task("uwu", "uwu", "media", new Date()));
+            CRUDTask.addTask(new Task("owo", "owo", "media", new Date()));
         }
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(this.getLayoutInflater());
