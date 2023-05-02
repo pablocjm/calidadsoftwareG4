@@ -108,7 +108,7 @@ public class TaskEditFragment extends Fragment {
             String titleText = titleInputText.getText().toString();
             String descriptionText = descriptionInputText.getText().toString();
             String importanceText = importanceInputText.getText().toString();
-            Task newTask = new Task(titleText, descriptionText, dateTask);
+            Task newTask = new Task(titleText, descriptionText, importanceText, dateTask);
             newTask.setCheck(this.task.isCheck());
             CRUDTask.updateTask(this.task, newTask);
             Toast.makeText(this.getContext(), R.string.successful_edit, Toast.LENGTH_LONG).show();
