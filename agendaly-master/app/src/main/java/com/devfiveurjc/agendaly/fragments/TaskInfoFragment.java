@@ -32,7 +32,7 @@ public class TaskInfoFragment extends Fragment {
         View view = this.binding.getRoot();
         TextView title = view.findViewById(R.id.taskInfoTitle);
         TextView description = view.findViewById(R.id.taskInfoDescription);
-        TestView importance = view.findViewById(R.id.taskInfoImportance);
+        TextView importance = view.findViewById(R.id.taskInfoImportance);
         TextView date = view.findViewById(R.id.taskInfoDate);
         TextView status =  view.findViewById(R.id.taskInfoStatus);
         // retrieve bundle
