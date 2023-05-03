@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_entries">
+        <item>@string/english</item>
+        <item>@string/spanish</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>es</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="blue">#4A68D6</color>
+    <color name="gray">#424242</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FFE500</color>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="border">50dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <item name="action_SecondFragment_to_NewNote" type="id"/>
+    <string name="app_name" translatable="false">Agendaly</string>
+    <string name="caution">Caution</string>
+    <string name="caution_advise">
+        If you don\'t wish to make any changes press Go Back.
+    </string>
+    <string name="caution_text_delete">
+        If you press Confirm you will permanently delete this task.
+    </string>
+    <string name="caution_text_edit">
+        If you press Confirm you will modify this task with the new data entered.
+    </string>
+    <string name="completed">Completed</string>
+    <string name="confirm">Confirm</string>
+    <string name="dark_mode_title">Dark mode</string>
+    <string name="date">Date</string>
+    <string name="delete">Delete</string>
+    <string name="description">Description</string>
+    <string name="description_write">Write a description</string>
+    <string name="edit_task">Edit</string>
+    <string name="english">English</string>
+    <string name="goback">Go back</string>
+    <string name="language_title">Select your language</string>
+    <string name="new_description_write">Write a new description</string>
+    <string name="new_title_write">Write a new title</string>
+    <string name="no_title_text">Please, indicate the title of your task.</string>
+    <string name="save">Save</string>
+    <string name="settings_label">Settings</string>
+    <string name="spanish">Spanish</string>
+    <string name="status">Status</string>
+    <string name="successful_edit">Your task has been modified</string>
+    <string name="task_add_label">Add Task</string>
+    <string name="task_edit_label">Edit Task</string>
+    <string name="task_info_label">Info Task</string>
+    <string name="time">Time</string>
+    <string name="title">Title</string>
+    <string name="title_write">Write a title</string>
+    <string name="uncompleted">Uncompleted</string>
+    <string name="week_day">Week Day</string>
+    <style name="Theme.Agendaly" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/yellow</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/blue</item>
+        <item name="colorSecondaryVariant">@color/yellow</item>
+        <item name="colorOnSecondary">@color/white</item>
+        
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+    <style name="Theme.Agendaly.AlertDialog" parent="Theme.Agendaly"/>
+    <style name="Theme.Agendaly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Agendaly.CheckBox"/>
+    <style name="Theme.Agendaly.DatePickerDialog" parent="@android:style/Theme.Holo.Light.Dialog.MinWidth"/>
+    <style name="Theme.Agendaly.Dialog" parent="Theme.Agendaly"/>
+    <style name="Theme.Agendaly.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Agendaly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>

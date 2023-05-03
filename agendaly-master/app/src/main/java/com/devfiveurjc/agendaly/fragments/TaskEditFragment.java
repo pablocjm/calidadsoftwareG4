@@ -41,6 +41,7 @@ public class TaskEditFragment extends Fragment {
         View view = this.binding.getRoot();
         TextInputEditText title = view.findViewById(R.id.taskEditEditTitle);
         TextInputEditText description = view.findViewById(R.id.taskEditEditDescription);
+        TextInputEditText importance = view.findViewById(R.id.taskAddEditImportance);
         this.dateDisplay = view.findViewById(R.id.taskEditDate);
         this.timeDisplay = view.findViewById(R.id.taskEditTime);
         // realm
@@ -51,6 +52,7 @@ public class TaskEditFragment extends Fragment {
         // display
         title.setText(this.task.getTitle());
         description.setText(this.task.getDescription());
+        importance.setText(this.task.getImportance());
         Date dateT = this.task.getDate();
         SimpleDateFormat ftDate = new SimpleDateFormat("dd/MM/yyyy");
         this.dateDisplay.setText(ftDate.format(dateT));
@@ -96,6 +98,7 @@ public class TaskEditFragment extends Fragment {
     private void modifyTask(View view) {
         EditText titleInputText = view.findViewById(R.id.taskEditEditTitle);
         EditText descriptionInputText = view.findViewById(R.id.taskEditEditDescription);
+        EditText importanceInputText = view.findViewById(R.id.taskAddEditImportance);
         boolean isTitleInputEmpty = titleInputText.getText().toString().equals("");
         if (!isTitleInputEmpty) {
             Calendar dateTaskCalendar = Calendar.getInstance();
@@ -104,7 +107,8 @@ public class TaskEditFragment extends Fragment {
             // realm
             String titleText = titleInputText.getText().toString();
             String descriptionText = descriptionInputText.getText().toString();
-            Task newTask = new Task(titleText, descriptionText, dateTask);
+            String importanceText = importanceInputText.getText().toString();
+            Task newTask = new Task(titleText, descriptionText, importanceText, dateTask);
             newTask.setCheck(this.task.isCheck());
             CRUDTask.updateTask(this.task, newTask);
             Toast.makeText(this.getContext(), R.string.successful_edit, Toast.LENGTH_LONG).show();
