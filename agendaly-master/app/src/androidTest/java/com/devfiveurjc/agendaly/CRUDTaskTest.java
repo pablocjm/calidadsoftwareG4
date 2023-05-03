@@ -15,8 +15,10 @@ public class CRUDTaskTest {
     public void testCreateTask (){
         //Borrar todas las Task
         CRUDTask.deleteAllTasks();
+        
+        Date date = new Date();
 
-        CRUDTask.addTask(new Task("hola", "que tal", "media", new Date()));
+        CRUDTask.addTask(new Task("hola", "que tal", "media", date));
         List<Task> tasks = CRUDTask.getAllTasks();
         Assert.assertEquals(1, tasks.size());
         Assert.assertEquals("hola", tasks.get(0).getTitle());
