@@ -39,6 +39,7 @@ id taskAddConstraintLayout
 id taskAddDate
 id taskAddEditDateButton
 id taskAddEditDescription
+id taskAddEditImportance
 id taskAddEditTimeButton
 id taskAddEditTitle
 id taskAddSaveButton
@@ -57,6 +58,7 @@ id taskInfoDate
 id taskInfoDeleteButton
 id taskInfoDescription
 id taskInfoEditButton
+id taskInfoImportance
 id taskInfoStatus
 id taskInfoTitle
 id taskListConstraintLayout

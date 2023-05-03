@@ -8,6 +8,8 @@ public interface com_devfiveurjc_agendaly_models_TaskRealmProxyInterface {
     public void realmSet$title(String value);
     public String realmGet$description();
     public void realmSet$description(String value);
+    public String realmGet$importance();
+    public void realmSet$importance(String value);
     public java.util.Date realmGet$date();
     public void realmSet$date(java.util.Date value);
     public boolean realmGet$check();

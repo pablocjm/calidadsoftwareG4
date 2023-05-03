@@ -36,6 +36,9 @@ public final class FragmentTaskInfoBinding implements ViewBinding {
   public final MaterialButton taskInfoEditButton;
 
   @NonNull
+  public final TextView taskInfoImportance;
+
+  @NonNull
   public final TextView taskInfoStatus;
 
   @NonNull
@@ -44,14 +47,15 @@ public final class FragmentTaskInfoBinding implements ViewBinding {
   private FragmentTaskInfoBinding(@NonNull ConstraintLayout rootView,
       @NonNull ConstraintLayout taskInfoConstraintLayout, @NonNull TextView taskInfoDate,
       @NonNull MaterialButton taskInfoDeleteButton, @NonNull TextView taskInfoDescription,
-      @NonNull MaterialButton taskInfoEditButton, @NonNull TextView taskInfoStatus,
-      @NonNull TextView taskInfoTitle) {
+      @NonNull MaterialButton taskInfoEditButton, @NonNull TextView taskInfoImportance,
+      @NonNull TextView taskInfoStatus, @NonNull TextView taskInfoTitle) {
     this.rootView = rootView;
     this.taskInfoConstraintLayout = taskInfoConstraintLayout;
     this.taskInfoDate = taskInfoDate;
     this.taskInfoDeleteButton = taskInfoDeleteButton;
     this.taskInfoDescription = taskInfoDescription;
     this.taskInfoEditButton = taskInfoEditButton;
+    this.taskInfoImportance = taskInfoImportance;
     this.taskInfoStatus = taskInfoStatus;
     this.taskInfoTitle = taskInfoTitle;
   }
@@ -109,6 +113,12 @@ public final class FragmentTaskInfoBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.taskInfoImportance;
+      TextView taskInfoImportance = ViewBindings.findChildViewById(rootView, id);
+      if (taskInfoImportance == null) {
+        break missingId;
+      }
+
       id = R.id.taskInfoStatus;
       TextView taskInfoStatus = ViewBindings.findChildViewById(rootView, id);
       if (taskInfoStatus == null) {
@@ -123,7 +133,7 @@ public final class FragmentTaskInfoBinding implements ViewBinding {
 
       return new FragmentTaskInfoBinding((ConstraintLayout) rootView, taskInfoConstraintLayout,
           taskInfoDate, taskInfoDeleteButton, taskInfoDescription, taskInfoEditButton,
-          taskInfoStatus, taskInfoTitle);
+          taskInfoImportance, taskInfoStatus, taskInfoTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

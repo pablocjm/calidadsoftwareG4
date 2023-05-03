@@ -1,0 +1,36 @@
+INSTRUMENTATION_STATUS: class=com.devfiveurjc.agendaly.IntegrationTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stream=
+com.devfiveurjc.agendaly.IntegrationTest:
+INSTRUMENTATION_STATUS: test=testInsertRecord
+INSTRUMENTATION_STATUS_CODE: 1
+INSTRUMENTATION_STATUS: class=com.devfiveurjc.agendaly.IntegrationTest
+INSTRUMENTATION_STATUS: current=1
+INSTRUMENTATION_STATUS: id=AndroidJUnitRunner
+INSTRUMENTATION_STATUS: numtests=1
+INSTRUMENTATION_STATUS: stack=java.lang.NullPointerException: Attempt to invoke virtual method 'long android.database.sqlite.SQLiteDatabase.insert(java.lang.String, java.lang.String, android.content.ContentValues)' on a null object reference
+at com.devfiveurjc.agendaly.IntegrationTest.testInsertRecord(IntegrationTest.java:23)
+
+INSTRUMENTATION_STATUS: stream=
+Error in testInsertRecord(com.devfiveurjc.agendaly.IntegrationTest):
+java.lang.NullPointerException: Attempt to invoke virtual method 'long android.database.sqlite.SQLiteDatabase.insert(java.lang.String, java.lang.String, android.content.ContentValues)' on a null object reference
+at com.devfiveurjc.agendaly.IntegrationTest.testInsertRecord(IntegrationTest.java:23)
+
+INSTRUMENTATION_STATUS: test=testInsertRecord
+INSTRUMENTATION_STATUS_CODE: -2
+INSTRUMENTATION_RESULT: stream=
+
+Time: 0.01
+There was 1 failure:
+1) testInsertRecord(com.devfiveurjc.agendaly.IntegrationTest)
+java.lang.NullPointerException: Attempt to invoke virtual method 'long android.database.sqlite.SQLiteDatabase.insert(java.lang.String, java.lang.String, android.content.ContentValues)' on a null object reference
+at com.devfiveurjc.agendaly.IntegrationTest.testInsertRecord(IntegrationTest.java:23)
+
+FAILURES!!!
+Tests run: 1,  Failures: 1
+
+
+INSTRUMENTATION_CODE: -1
+

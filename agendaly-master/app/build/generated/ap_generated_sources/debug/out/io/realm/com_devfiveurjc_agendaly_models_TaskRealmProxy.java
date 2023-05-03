@@ -46,15 +46,17 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         long idColKey;
         long titleColKey;
         long descriptionColKey;
+        long importanceColKey;
         long dateColKey;
         long checkColKey;
 
         TaskColumnInfo(OsSchemaInfo schemaInfo) {
-            super(5);
+            super(6);
             OsObjectSchemaInfo objectSchemaInfo = schemaInfo.getObjectSchemaInfo("Task");
             this.idColKey = addColumnDetails("id", "id", objectSchemaInfo);
             this.titleColKey = addColumnDetails("title", "title", objectSchemaInfo);
             this.descriptionColKey = addColumnDetails("description", "description", objectSchemaInfo);
+            this.importanceColKey = addColumnDetails("importance", "importance", objectSchemaInfo);
             this.dateColKey = addColumnDetails("date", "date", objectSchemaInfo);
             this.checkColKey = addColumnDetails("check", "check", objectSchemaInfo);
         }
@@ -76,6 +78,7 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
             dst.idColKey = src.idColKey;
             dst.titleColKey = src.titleColKey;
             dst.descriptionColKey = src.descriptionColKey;
+            dst.importanceColKey = src.importanceColKey;
             dst.dateColKey = src.dateColKey;
             dst.checkColKey = src.checkColKey;
         }
@@ -185,6 +188,36 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
 
     @Override
     @SuppressWarnings("cast")
+    public String realmGet$importance() {
+        proxyState.getRealm$realm().checkIfValid();
+        return (java.lang.String) proxyState.getRow$realm().getString(columnInfo.importanceColKey);
+    }
+
+    @Override
+    public void realmSet$importance(String value) {
+        if (proxyState.isUnderConstruction()) {
+            if (!proxyState.getAcceptDefaultValue$realm()) {
+                return;
+            }
+            final Row row = proxyState.getRow$realm();
+            if (value == null) {
+                row.getTable().setNull(columnInfo.importanceColKey, row.getObjectKey(), true);
+                return;
+            }
+            row.getTable().setString(columnInfo.importanceColKey, row.getObjectKey(), value, true);
+            return;
+        }
+
+        proxyState.getRealm$realm().checkIfValid();
+        if (value == null) {
+            proxyState.getRow$realm().setNull(columnInfo.importanceColKey);
+            return;
+        }
+        proxyState.getRow$realm().setString(columnInfo.importanceColKey, value);
+    }
+
+    @Override
+    @SuppressWarnings("cast")
     public Date realmGet$date() {
         proxyState.getRealm$realm().checkIfValid();
         if (proxyState.getRow$realm().isNull(columnInfo.dateColKey)) {
@@ -239,10 +272,11 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
     }
 
     private static OsObjectSchemaInfo createExpectedObjectSchemaInfo() {
-        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder(NO_ALIAS, "Task", false, 5, 0);
+        OsObjectSchemaInfo.Builder builder = new OsObjectSchemaInfo.Builder(NO_ALIAS, "Task", false, 6, 0);
         builder.addPersistedProperty(NO_ALIAS, "id", RealmFieldType.INTEGER, Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         builder.addPersistedProperty(NO_ALIAS, "title", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
         builder.addPersistedProperty(NO_ALIAS, "description", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
+        builder.addPersistedProperty(NO_ALIAS, "importance", RealmFieldType.STRING, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
         builder.addPersistedProperty(NO_ALIAS, "date", RealmFieldType.DATE, !Property.PRIMARY_KEY, !Property.INDEXED, !Property.REQUIRED);
         builder.addPersistedProperty(NO_ALIAS, "check", RealmFieldType.BOOLEAN, !Property.PRIMARY_KEY, !Property.INDEXED, Property.REQUIRED);
         return builder.build();
@@ -314,6 +348,13 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
                 objProxy.realmSet$description((String) json.getString("description"));
             }
         }
+        if (json.has("importance")) {
+            if (json.isNull("importance")) {
+                objProxy.realmSet$importance(null);
+            } else {
+                objProxy.realmSet$importance((String) json.getString("importance"));
+            }
+        }
         if (json.has("date")) {
             if (json.isNull("date")) {
                 objProxy.realmSet$date(null);
@@ -368,6 +409,13 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
                 } else {
                     reader.skipValue();
                     objProxy.realmSet$description(null);
+                }
+            } else if (name.equals("importance")) {
+                if (reader.peek() != JsonToken.NULL) {
+                    objProxy.realmSet$importance((String) reader.nextString());
+                } else {
+                    reader.skipValue();
+                    objProxy.realmSet$importance(null);
                 }
             } else if (name.equals("date")) {
                 if (reader.peek() == JsonToken.NULL) {
@@ -461,6 +509,7 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         builder.addInteger(columnInfo.idColKey, unmanagedSource.realmGet$id());
         builder.addString(columnInfo.titleColKey, unmanagedSource.realmGet$title());
         builder.addString(columnInfo.descriptionColKey, unmanagedSource.realmGet$description());
+        builder.addString(columnInfo.importanceColKey, unmanagedSource.realmGet$importance());
         builder.addDate(columnInfo.dateColKey, unmanagedSource.realmGet$date());
         builder.addBoolean(columnInfo.checkColKey, unmanagedSource.realmGet$check());
 
@@ -499,6 +548,10 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         String realmGet$description = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$description();
         if (realmGet$description != null) {
             Table.nativeSetString(tableNativePtr, columnInfo.descriptionColKey, objKey, realmGet$description, false);
+        }
+        String realmGet$importance = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$importance();
+        if (realmGet$importance != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.importanceColKey, objKey, realmGet$importance, false);
         }
         java.util.Date realmGet$date = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$date();
         if (realmGet$date != null) {
@@ -542,6 +595,10 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
             if (realmGet$description != null) {
                 Table.nativeSetString(tableNativePtr, columnInfo.descriptionColKey, objKey, realmGet$description, false);
             }
+            String realmGet$importance = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$importance();
+            if (realmGet$importance != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.importanceColKey, objKey, realmGet$importance, false);
+            }
             java.util.Date realmGet$date = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$date();
             if (realmGet$date != null) {
                 Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
@@ -578,6 +635,12 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
             Table.nativeSetString(tableNativePtr, columnInfo.descriptionColKey, objKey, realmGet$description, false);
         } else {
             Table.nativeSetNull(tableNativePtr, columnInfo.descriptionColKey, objKey, false);
+        }
+        String realmGet$importance = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$importance();
+        if (realmGet$importance != null) {
+            Table.nativeSetString(tableNativePtr, columnInfo.importanceColKey, objKey, realmGet$importance, false);
+        } else {
+            Table.nativeSetNull(tableNativePtr, columnInfo.importanceColKey, objKey, false);
         }
         java.util.Date realmGet$date = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$date();
         if (realmGet$date != null) {
@@ -625,6 +688,12 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
             } else {
                 Table.nativeSetNull(tableNativePtr, columnInfo.descriptionColKey, objKey, false);
             }
+            String realmGet$importance = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$importance();
+            if (realmGet$importance != null) {
+                Table.nativeSetString(tableNativePtr, columnInfo.importanceColKey, objKey, realmGet$importance, false);
+            } else {
+                Table.nativeSetNull(tableNativePtr, columnInfo.importanceColKey, objKey, false);
+            }
             java.util.Date realmGet$date = ((com_devfiveurjc_agendaly_models_TaskRealmProxyInterface) object).realmGet$date();
             if (realmGet$date != null) {
                 Table.nativeSetTimestamp(tableNativePtr, columnInfo.dateColKey, objKey, realmGet$date.getTime(), false);
@@ -658,6 +727,7 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         unmanagedCopy.realmSet$id(realmSource.realmGet$id());
         unmanagedCopy.realmSet$title(realmSource.realmGet$title());
         unmanagedCopy.realmSet$description(realmSource.realmGet$description());
+        unmanagedCopy.realmSet$importance(realmSource.realmGet$importance());
         unmanagedCopy.realmSet$date(realmSource.realmGet$date());
         unmanagedCopy.realmSet$check(realmSource.realmGet$check());
 
@@ -672,6 +742,7 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         builder.addInteger(columnInfo.idColKey, realmObjectSource.realmGet$id());
         builder.addString(columnInfo.titleColKey, realmObjectSource.realmGet$title());
         builder.addString(columnInfo.descriptionColKey, realmObjectSource.realmGet$description());
+        builder.addString(columnInfo.importanceColKey, realmObjectSource.realmGet$importance());
         builder.addDate(columnInfo.dateColKey, realmObjectSource.realmGet$date());
         builder.addBoolean(columnInfo.checkColKey, realmObjectSource.realmGet$check());
 
@@ -696,6 +767,10 @@ public class com_devfiveurjc_agendaly_models_TaskRealmProxy extends com.devfiveu
         stringBuilder.append(",");
         stringBuilder.append("{description:");
         stringBuilder.append(realmGet$description() != null ? realmGet$description() : "null");
+        stringBuilder.append("}");
+        stringBuilder.append(",");
+        stringBuilder.append("{importance:");
+        stringBuilder.append(realmGet$importance() != null ? realmGet$importance() : "null");
         stringBuilder.append("}");
         stringBuilder.append(",");
         stringBuilder.append("{date:");

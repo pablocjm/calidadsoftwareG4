@@ -4,7 +4,7 @@
             "outputFile": "com.devfiveurjc.agendaly.app-mergeDebugResources-40:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\apaju\\.gradle\\caches\\transforms-3\\e8e774924cba14c88f4d99ee92b273ac\\transformed\\material-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\jesus\\.gradle\\caches\\transforms-3\\e8e774924cba14c88f4d99ee92b273ac\\transformed\\material-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\apaju\\Documents\\Repository\\calidadsoftwareG4\\agendaly-master\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\jesus\\Documents\\UNI\\2 cuatri\\GitHub\\calidadsoftwareG4\\agendaly-master\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2,22,19,24,23,21,15,20",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -40,7 +40,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\apaju\\.gradle\\caches\\transforms-3\\db4e0cd0c03d64beb4ff88f57f0345fe\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "source": "C:\\Users\\jesus\\.gradle\\caches\\transforms-3\\db4e0cd0c03d64beb4ff88f57f0345fe\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

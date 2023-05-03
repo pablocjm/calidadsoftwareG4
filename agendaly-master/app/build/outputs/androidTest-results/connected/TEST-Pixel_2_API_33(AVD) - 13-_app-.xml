@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.devfiveurjc.agendaly.IntegrationTest" tests="1" failures="1" errors="0" skipped="0" time="0.216" timestamp="2023-05-03T21:39:56" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="testInsertRecord" classname="com.devfiveurjc.agendaly.IntegrationTest" time="0.016">
+    <failure>java.lang.NullPointerException: Attempt to invoke virtual method 'long android.database.sqlite.SQLiteDatabase.insert(java.lang.String, java.lang.String, android.content.ContentValues)' on a null object reference
+at com.devfiveurjc.agendaly.IntegrationTest.testInsertRecord(IntegrationTest.java:23)</failure>
+  </testcase>
+</testsuite>

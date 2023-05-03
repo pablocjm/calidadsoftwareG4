@@ -7,10 +7,13 @@ import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import org.junit.Test;
+
 public class IntegrationTest {
 
     private SQLiteDatabase database;
-
+    
+    @Test
     public void testInsertRecord() {
         ContentValues values = new ContentValues();
         values.put("tittle", "Test Title");

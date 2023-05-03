@@ -1,7 +1,33 @@
-com.devfiveurjc.agendaly.test.app-androidTest-0 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\build\generated\res\resValues\androidTest\debug
-com.devfiveurjc.agendaly.test.app-androidTest-1 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\build\generated\res\rs\androidTest\debug
-com.devfiveurjc.agendaly.test.app-mergeDebugAndroidTestResources-2 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
-com.devfiveurjc.agendaly.test.app-mergeDebugAndroidTestResources-3 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
-com.devfiveurjc.agendaly.test.app-merged_res-4 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\build\intermediates\merged_res\debugAndroidTest
-com.devfiveurjc.agendaly.test.app-androidTest-5 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\src\androidTest\res
-com.devfiveurjc.agendaly.test.app-androidTestDebug-6 C:\Users\apaju\Documents\Repository\calidadsoftwareG4\agendaly-master\app\src\androidTestDebug\res
+com.devfiveurjc.agendaly.test.app-fragment-1.5.2-0 C:\Users\jesus\.gradle\caches\transforms-3\01627d9695cd4ac861c50f79a873a1e7\transformed\fragment-1.5.2\res
+com.devfiveurjc.agendaly.test.app-core-1.8.0-1 C:\Users\jesus\.gradle\caches\transforms-3\0a3e547d8b89eb454788ffca49b1c3b2\transformed\core-1.8.0\res
+com.devfiveurjc.agendaly.test.app-recyclerview-1.2.1-2 C:\Users\jesus\.gradle\caches\transforms-3\2285a1e1d28bd891ed0ab913986d0dd9\transformed\recyclerview-1.2.1\res
+com.devfiveurjc.agendaly.test.app-coordinatorlayout-1.1.0-3 C:\Users\jesus\.gradle\caches\transforms-3\23c1ed86e53b57095aa8af0e9cb6d934\transformed\coordinatorlayout-1.1.0\res
+com.devfiveurjc.agendaly.test.app-core-ktx-1.8.0-4 C:\Users\jesus\.gradle\caches\transforms-3\361784557d30e7e69a7b4cdc3981fe95\transformed\core-ktx-1.8.0\res
+com.devfiveurjc.agendaly.test.app-espresso-contrib-3.5.1-5 C:\Users\jesus\.gradle\caches\transforms-3\3d1ef05ac7db529c5ad2df5a883f4ab9\transformed\espresso-contrib-3.5.1\res
+com.devfiveurjc.agendaly.test.app-emoji2-views-helper-1.2.0-6 C:\Users\jesus\.gradle\caches\transforms-3\3ff08afd3e7da5936b823d54b77a56af\transformed\emoji2-views-helper-1.2.0\res
+com.devfiveurjc.agendaly.test.app-activity-1.5.1-7 C:\Users\jesus\.gradle\caches\transforms-3\408de50be561bb178977f776db3e1193\transformed\activity-1.5.1\res
+com.devfiveurjc.agendaly.test.app-drawerlayout-1.1.1-8 C:\Users\jesus\.gradle\caches\transforms-3\54f6778aa983d89cd33d3a54363b1f4a\transformed\drawerlayout-1.1.1\res
+com.devfiveurjc.agendaly.test.app-startup-runtime-1.1.1-9 C:\Users\jesus\.gradle\caches\transforms-3\613c7d89c90f1c9e2d990973378ae4fc\transformed\startup-runtime-1.1.1\res
+com.devfiveurjc.agendaly.test.app-lifecycle-livedata-core-2.5.1-10 C:\Users\jesus\.gradle\caches\transforms-3\6cdea06632e19ee2bcbe9b7603b4faa4\transformed\lifecycle-livedata-core-2.5.1\res
+com.devfiveurjc.agendaly.test.app-emoji2-1.2.0-11 C:\Users\jesus\.gradle\caches\transforms-3\7591db4de326a3393fb3dc6b6ee672f0\transformed\emoji2-1.2.0\res
+com.devfiveurjc.agendaly.test.app-transition-1.4.1-12 C:\Users\jesus\.gradle\caches\transforms-3\9c880f55ce9f42657269668b24528860\transformed\transition-1.4.1\res
+com.devfiveurjc.agendaly.test.app-cardview-1.0.0-13 C:\Users\jesus\.gradle\caches\transforms-3\b910b8c354e2c1f1c43959d855ca5def\transformed\cardview-1.0.0\res
+com.devfiveurjc.agendaly.test.app-lifecycle-process-2.4.1-14 C:\Users\jesus\.gradle\caches\transforms-3\be2ef02d5a21bfea6eafe66b75b83431\transformed\lifecycle-process-2.4.1\res
+com.devfiveurjc.agendaly.test.app-lifecycle-runtime-2.5.1-15 C:\Users\jesus\.gradle\caches\transforms-3\c630d7e1fdaac4d68579ec3a74e0b3cf\transformed\lifecycle-runtime-2.5.1\res
+com.devfiveurjc.agendaly.test.app-lifecycle-viewmodel-savedstate-2.5.1-16 C:\Users\jesus\.gradle\caches\transforms-3\c8442c4698dabd854419e788f7be559e\transformed\lifecycle-viewmodel-savedstate-2.5.1\res
+com.devfiveurjc.agendaly.test.app-savedstate-1.2.0-17 C:\Users\jesus\.gradle\caches\transforms-3\cba55e7a0025eec918ca15d337bf8f42\transformed\savedstate-1.2.0\res
+com.devfiveurjc.agendaly.test.app-constraintlayout-2.1.4-18 C:\Users\jesus\.gradle\caches\transforms-3\cee113f4a8d2c093e0671c1b2c9ef99c\transformed\constraintlayout-2.1.4\res
+com.devfiveurjc.agendaly.test.app-annotation-experimental-1.1.0-19 C:\Users\jesus\.gradle\caches\transforms-3\d2bdfd0398792088c80934f976823c27\transformed\annotation-experimental-1.1.0\res
+com.devfiveurjc.agendaly.test.app-appcompat-1.5.1-20 C:\Users\jesus\.gradle\caches\transforms-3\db4e0cd0c03d64beb4ff88f57f0345fe\transformed\appcompat-1.5.1\res
+com.devfiveurjc.agendaly.test.app-appcompat-resources-1.5.1-21 C:\Users\jesus\.gradle\caches\transforms-3\e0a52b19a04f4a040cb5e96751586b66\transformed\appcompat-resources-1.5.1\res
+com.devfiveurjc.agendaly.test.app-material-1.6.1-22 C:\Users\jesus\.gradle\caches\transforms-3\e8e774924cba14c88f4d99ee92b273ac\transformed\material-1.6.1\res
+com.devfiveurjc.agendaly.test.app-viewpager2-1.0.0-23 C:\Users\jesus\.gradle\caches\transforms-3\e9e9f8c32f79629266d31f92a9087b09\transformed\viewpager2-1.0.0\res
+com.devfiveurjc.agendaly.test.app-lifecycle-viewmodel-2.5.1-24 C:\Users\jesus\.gradle\caches\transforms-3\f58f96ab3300c747fbbeb4777f6210ba\transformed\lifecycle-viewmodel-2.5.1\res
+com.devfiveurjc.agendaly.test.app-core-1.5.0-25 C:\Users\jesus\.gradle\caches\transforms-3\f5a28179b5419bf28d3e09645d4943f3\transformed\core-1.5.0\res
+com.devfiveurjc.agendaly.test.app-androidTest-26 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\build\generated\res\resValues\androidTest\debug
+com.devfiveurjc.agendaly.test.app-androidTest-27 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\build\generated\res\rs\androidTest\debug
+com.devfiveurjc.agendaly.test.app-mergeDebugAndroidTestResources-28 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.devfiveurjc.agendaly.test.app-mergeDebugAndroidTestResources-29 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.devfiveurjc.agendaly.test.app-merged_res-30 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\build\intermediates\merged_res\debugAndroidTest
+com.devfiveurjc.agendaly.test.app-androidTest-31 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\src\androidTest\res
+com.devfiveurjc.agendaly.test.app-androidTestDebug-32 C:\Users\jesus\Documents\UNI\2 cuatri\GitHub\calidadsoftwareG4\agendaly-master\app\src\androidTestDebug\res

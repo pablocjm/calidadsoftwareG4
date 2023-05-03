@@ -35,6 +35,9 @@ public final class FragmentTaskAddBinding implements ViewBinding {
   public final TextInputEditText taskAddEditDescription;
 
   @NonNull
+  public final TextInputEditText taskAddEditImportance;
+
+  @NonNull
   public final FloatingActionButton taskAddEditTimeButton;
 
   @NonNull
@@ -50,6 +53,7 @@ public final class FragmentTaskAddBinding implements ViewBinding {
       @NonNull ConstraintLayout taskAddConstraintLayout, @NonNull TextView taskAddDate,
       @NonNull FloatingActionButton taskAddEditDateButton,
       @NonNull TextInputEditText taskAddEditDescription,
+      @NonNull TextInputEditText taskAddEditImportance,
       @NonNull FloatingActionButton taskAddEditTimeButton,
       @NonNull TextInputEditText taskAddEditTitle, @NonNull MaterialButton taskAddSaveButton,
       @NonNull TextView taskAddTime) {
@@ -58,6 +62,7 @@ public final class FragmentTaskAddBinding implements ViewBinding {
     this.taskAddDate = taskAddDate;
     this.taskAddEditDateButton = taskAddEditDateButton;
     this.taskAddEditDescription = taskAddEditDescription;
+    this.taskAddEditImportance = taskAddEditImportance;
     this.taskAddEditTimeButton = taskAddEditTimeButton;
     this.taskAddEditTitle = taskAddEditTitle;
     this.taskAddSaveButton = taskAddSaveButton;
@@ -111,6 +116,12 @@ public final class FragmentTaskAddBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.taskAddEditImportance;
+      TextInputEditText taskAddEditImportance = ViewBindings.findChildViewById(rootView, id);
+      if (taskAddEditImportance == null) {
+        break missingId;
+      }
+
       id = R.id.taskAddEditTimeButton;
       FloatingActionButton taskAddEditTimeButton = ViewBindings.findChildViewById(rootView, id);
       if (taskAddEditTimeButton == null) {
@@ -136,8 +147,8 @@ public final class FragmentTaskAddBinding implements ViewBinding {
       }
 
       return new FragmentTaskAddBinding((ConstraintLayout) rootView, taskAddConstraintLayout,
-          taskAddDate, taskAddEditDateButton, taskAddEditDescription, taskAddEditTimeButton,
-          taskAddEditTitle, taskAddSaveButton, taskAddTime);
+          taskAddDate, taskAddEditDateButton, taskAddEditDescription, taskAddEditImportance,
+          taskAddEditTimeButton, taskAddEditTitle, taskAddSaveButton, taskAddTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
